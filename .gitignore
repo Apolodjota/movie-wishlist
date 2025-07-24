@@ -1,0 +1,45 @@
+# Dependencias de Node.js
+# Tanto para el frontend como para el backend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos de entorno
+# Contienen secretos y configuraciones locales. ¡Nunca los subas a Git!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Carpeta de compilación del frontend
+# Se genera al ejecutar 'npm run build' en el frontend
+frontend/build/
+
+# Archivos de log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de caché y temporales
+.DS_Store
+.cache
+.tmp
+*.swp
+
+# Archivos del sistema operativo
+Thumbs.db
+ehthumbs.db
+
+# Archivos de configuración de IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
