@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #16213e;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #0f3460;
+  padding-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #e94560;
+}
+
+.movie-form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.movie-form input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #0f3460;
+  border-radius: 8px 0 0 8px;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.movie-form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #e94560;
+  color: white;
+  font-weight: 600;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a2e;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  border-left: 5px solid #0f3460;
+  margin-bottom: 10px;
+}
+
+.movie-item.watched {
+  text-decoration: line-through;
+  color: #888;
+  border-left-color: #5cb85c;
+}
+
+.status-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #e94560;
+}
+
+.movie-item.watched .status-indicator {
+  background-color: #5cb85c;
+}
+
+.app-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #0f3460;
+    color: #888;
+}
